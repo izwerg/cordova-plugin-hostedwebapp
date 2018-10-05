@@ -1,18 +1,11 @@
 {
-  "name": "cordova-plugin-hostedwebapp",
   "version": "0.3.2",
+  "name": "cordova-plugin-hostedwebapp",
+  "cordova_name": "Cordova Hosted Web App Plugin",
   "description": "Hosted Web App Plugin",
-  "cordova": {
-    "id": "cordova-plugin-hostedwebapp",
-    "platforms": [
-      "android",
-      "windows",
-      "ios"
-    ]
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/manifoldjs/ManifoldCordova.git"
+    "url": "https://github.com/crux153/ManifoldCordova.git"
   },
   "keywords": [
     "cordova",
@@ -24,10 +17,10 @@
     "cordova-windows",
     "cordova-ios"
   ],
-  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/manifoldjs/ManifoldCordova/issues"
-  },
-  "homepage": "https://github.com/manifoldjs/ManifoldCordova"
+  "platforms": [
+    "android",
+    "windows",
+    "ios"
+  ]
 }
