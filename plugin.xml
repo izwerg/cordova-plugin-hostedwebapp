@@ -25,9 +25,9 @@
     <asset src="www/hostedapp-bridge.js" target="hostedapp-bridge.js" />
 
     <engines>
-        <engine name="cordova-windows" version="<=4.3.9" />
-        <engine name="cordova-ios" version="<=5.0.0" />
-        <engine name="cordova-android" version="<=7.0.0" />
+        <engine name="cordova-windows" version="<=10.0.0" />
+        <engine name="cordova-ios" version="<=10.0.0" />
+        <engine name="cordova-android" version="<=10.0.0" />
     </engines>
 
     <!-- android -->
