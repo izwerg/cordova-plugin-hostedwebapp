@@ -85,7 +85,7 @@ module.exports = function (context) {
   etree = context.requireCordovaModule('cordova-lib/node_modules/elementtree');
   
   // move contents of the assets folder to the windows platform dir
-  var Q = context.requireCordovaModule('q');
+  var Q = require('q');
 
   var filename = "wrapper";
 

@@ -70,7 +70,7 @@ module.exports = function (context) {
     return;
   }
   
-  Q = context.requireCordovaModule('q');
+  Q = require('q');
   var task = Q.defer();
 
   var destPath = path.join(projectRoot, "platforms", "windows", "www", "wrapper.html");
