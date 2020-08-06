@@ -1,6 +1,4 @@
-﻿#!/usr/bin/env node
-
-var fs = require('fs'),
+﻿var fs = require('fs'),
     path = require('path'),
     url = require('url'),
     downloader = require('./downloader'),

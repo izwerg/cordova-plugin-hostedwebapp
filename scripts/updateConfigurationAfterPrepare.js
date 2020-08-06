@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var createConfigParser = require('./createConfigParser'),
 	fs = require('fs'),
 	path = require('path'),
