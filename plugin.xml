@@ -11,7 +11,6 @@
 
     <dependency id="cordova-plugin-whitelist" version=">=1.0.1" />
     <dependency id="cordova-plugin-network-information" version=">=1.0.0" />
-    <dependency id="cordova-plugin-wkwebview-engine" version=">=1.0.0" />
 
     <hook type="before_prepare" src="scripts/updateConfigurationBeforePrepare.js" />
     <hook type="after_prepare" src="scripts/updateConfigurationAfterPrepare.js" />
@@ -25,9 +24,7 @@
     <asset src="www/hostedapp-bridge.js" target="hostedapp-bridge.js" />
 
     <engines>
-        <engine name="cordova-windows" version="<=10.0.0" />
-        <engine name="cordova-ios" version="<=10.0.0" />
-        <engine name="cordova-android" version="<=10.0.0" />
+        <engine name="cordova-ios" version=">=6.0.0" />
     </engines>
 
     <!-- android -->

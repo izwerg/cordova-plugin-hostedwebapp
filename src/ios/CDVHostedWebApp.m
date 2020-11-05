@@ -460,7 +460,6 @@ static NSString* const defaultManifestFileName = @"manifest.json";
                 [scripts addObject:@"cordova.js"];
             }
             
-            [scripts addObject:@"plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js"];
             [scripts addObject:@"hostedapp-bridge.js"];
             [self injectScripts:scripts];
         }
