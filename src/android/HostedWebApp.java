@@ -16,7 +16,7 @@ import org.apache.cordova.CordovaActivity;
 import org.apache.cordova.CordovaPlugin;
 
 import org.apache.cordova.PluginResult;
-import org.apache.cordova.Whitelist;
+import org.apache.cordova.AllowList;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -369,12 +369,12 @@ public class HostedWebApp extends CordovaPlugin {
         }
 
         if (match.length() > 0) {
-            Whitelist whitelist = new Whitelist();
+            AllowList whitelist = new AllowList();
             for (int j = 0; j < match.length(); j++) {
-                whitelist.addWhiteListEntry(match.optString(j).trim(), false);
+                whitelist.addAllowListEntry(match.optString(j).trim(), false);
             }
 
-            isURLMatch = whitelist.isUrlWhiteListed(pageUrl);
+            isURLMatch = whitelist.isUrlAllowListed(pageUrl);
         }
 
         return isURLMatch;
@@ -386,7 +386,7 @@ public class HostedWebApp extends CordovaPlugin {
 
     private CordovaPlugin getWhitelistPlugin() {
         if (this.whiteListPlugin == null) {
-            this.whiteListPlugin = this.webView.getPluginManager().getPlugin("Whitelist");
+            this.whiteListPlugin = this.webView.getPluginManager().getPlugin("AllowList");
         }
 
         return whiteListPlugin;
